@@ -1,0 +1,49 @@
+body {
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.login {
+    width: 1418px;
+    height: 900px;
+}
+
+img {
+width: 576px;
+height: 384.4700012207031px;
+top: 62px;
+left: 25px;
+}
+
+.form {
+    width: 434px;
+    height: 423px;
+    top: 42px;
+    left: 856px;
+}
+
+button{
+    margin-top: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #0D6EFD;
+    width: 1418px;
+    height: 72px;
+}
+
+.title {
+    color: #979fa6;
+}
+
+.or {
+    margin-top: 28px;
+}
+
+i {
+    margin-left: 5px;
+}

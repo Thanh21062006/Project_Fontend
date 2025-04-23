@@ -1,0 +1,46 @@
+body {
+    width: 100%;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+h2{
+    margin-bottom: 42px;
+}
+
+.color {
+    color: #ae9f9f;
+}
+
+.main {
+width: 1477px;
+height: 770px;
+background-color: aqua;
+}
+
+.register {
+    width: 1477px;
+    height: 770px;
+    background-image: url("../Assets/images/backgrauRegister.PNG");
+    background-size: cover; 
+    margin-top: 10px;
+}
+
+.title {
+    height: 552px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #E8EFFD;
+}
+
+.form {
+    width: 492px;
+    height: 552px;
+    background-color: #00000020;
+    padding-top: 49px;
+    padding-left: 65px;
+    padding-right: 33px;
+    border-radius: 4px;
+}
