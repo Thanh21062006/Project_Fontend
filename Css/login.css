@@ -1,6 +1,6 @@
 body {
-    padding-top: 100px;
-    padding-left: 100px;
+    padding-top: 10px;
+    padding-left: 20px;
 }
 
 .login {
@@ -46,4 +46,8 @@ footer {
 
 i {
     margin-left: 5px;
+    color: #FFFFFF;
+    background-color: #0D6EFD;
+    padding: 9px;
+    border-radius: 4px;
 }

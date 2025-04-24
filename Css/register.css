@@ -1,10 +1,10 @@
 body {
     width: 100%;
-    padding-left: 50px;
+    padding-left: 20px;
     padding-top: 10px;
 }
 
-h2{
+h1{
     margin-bottom: 42px;
 }
 
@@ -33,14 +33,24 @@ background-color: aqua;
     justify-content: center;
     align-items: center;
     color: #E8EFFD;
+    /* justify-content: spa; */
 }
 
 .form {
     width: 492px;
     height: 552px;
-    background-color: #00000020;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
     padding-top: 49px;
     padding-left: 65px;
     padding-right: 33px;
     border-radius: 4px;
+}
+
+.form input{
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .2);
 }
