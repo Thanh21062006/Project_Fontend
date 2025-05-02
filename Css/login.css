@@ -1,11 +1,12 @@
 body {
-    padding-top: 10px;
-    padding-left: 20px;
+    width: 1418px;
+    height: 900px;
 }
 
 .login {
-    width: 1418px;
-    height: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 img {
@@ -18,12 +19,16 @@ left: 25px;
 .form {
     width: 434px;
     height: 423px;
-    top: 42px;
-    left: 856px;
 }
 
 button{
     margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+a{
+    color: #DC3545;
+    margin-left: 5px;
 }
 
 footer {
@@ -50,4 +55,39 @@ i {
     background-color: #0D6EFD;
     padding: 9px;
     border-radius: 4px;
+}
+
+.form-control{
+    border: none;
+}
+
+.form-control input{
+    border: 1px solid #CED4DA;
+    display: block;
+}
+
+.form-control.err input{
+    border-color: red;
+}
+
+.form-control.success input{
+    border-color: rgb(14, 232, 14);
+}
+
+.form-control .err{
+    color: red;
+    font-size: 12px;
+    height: 13px;
+    margin-bottom: 5px;
+}
+
+#message {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: green;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
 }

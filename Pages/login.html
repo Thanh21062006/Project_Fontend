@@ -8,36 +8,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../Css/login.css">
 </head>
-<body>
-    <span class="title">login</span>
-    <div class="row g-3 login">
-        <div class="col-md-6"><img src="../Assets/images/a6f14c1fa6846f29f11dc2e85f40b29fbcc92d57.png" alt=""></div>
-        <div class="col-md-6 form">
-            <span>Sign in with <i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-linkedin-in"></i></span>
-            <p class="or"><b>Or</b></p>
-            <div class="mb-3">
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter a valid email address">
-                <label for="formGroupExampleInput" class="form-label">Email address</label>
-              </div>
-              <div class="mb-3">
-                <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Enter password">
-                <label for="formGroupExampleInput2" class="form-label">Password</label>
-              </div>
-              <button class="btn btn-primary" type="submit">Login</button>
-              <p><b>Don't have an account?</b><a href="./register.html">Register</a></p>
+<body class="d-flex flex-column m-auto">
+    <header><span class="title">login</span></header>
+
+    <main>
+        <div class="row g-3 login">
+            <div class="col-md-6"><img src="../Assets/images/a6f14c1fa6846f29f11dc2e85f40b29fbcc92d57.png" alt=""></div>
+            <div class="col-md-6 form">
+                <form action="#" id="myForm">
+                    <span>Sign in with <i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-linkedin-in"></i></span>
+                    <p class="or"><b>Or</b></p>
+                    <div class="form-control">
+                        <div class="err"></div>
+                        <input type="text" class="form-control" id="email" placeholder="Enter a valid email address">
+                        <label for="email" class="form-label">Email address</label>
+                      </div>
+                      <div class="form-control">
+                        <div class="err"></div>
+                        <input type="password" class="form-control" id="password" placeholder="Enter password">
+                        <label for="password" class="form-label">Password</label>
+                      </div>
+                      <button class="btn btn-primary" type="submit">Login</button>
+                      <p><b>Don't have an account?</b><a href="./register.html"><b>Register</b></a></p>
+                </form>
+            </div>
         </div>
 
-        <footer>
-            <div>
-                <span>Copyryght © 2025, All rights reserved</span>
-            </div>
-            <div>
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-google"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-            </div>
-        </footer>
-    </div>
+        <div id="message">
+            <!-- Đăng nhập thành công! -->
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <span>Copyryght © 2025, All rights reserved</span>
+        </div>
+        <div>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+    </footer>
+    
+    <script src="../Js/login.js"></script>
 </body>
 </html>

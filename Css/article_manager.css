@@ -61,24 +61,64 @@ main {
 
 .search {
     width: 602.5985107421875px;
+    background-color: transparent;
 }
 
 .information {
     width: 80%;
-    background-color: #FFFFFF;
     padding: 20px;
 }
 
-.input input{
-    border: 1px solid #CCCCCC;
-    margin: 6px 0px 10px 0px;
+.add{
+    width: 162px;
+    height: 40px;
+    border: none;
+    border-radius: 100px;
+    gap: 8px;
+    background-color: #65558F;
+    color: white;
+}
+
+tbody img{
+    width: 100px;
+    height: 70px;
     border-radius: 5px;
 }
 
-.input button{
-    border: none;
-    border-radius: 5px;
-    background-color: #28A745;
-    color: white;
+.status {
+    width: 56.79999923706055px;
+    height: 23px;
+    border-radius: 4px;
+    background-color: #D1FAE5;
+    text-align: center;
 }
+
+tbody .statuss{
+    width: 79px;
+    height: 32px;
+    border-radius: 4px;
+    border-width: 1px;
+    background-color: #EFEFEF;
+    border: 1px solid #CCCCCC;
+    text-align: center;
+    /* padding: 7px 23px 7px 11px; */
+}
+
+.style {
+    width: 49.61000061035156px;
+    height: 28px;
+    border-radius: 4px;
+    text-align: center;
+    border: none;
+}
+
+.edix {
+    background-color: #44EF55;
+    margin-right: 5px;
+}
+
+.del{
+    background-color: #EF4444;
+}
+
 

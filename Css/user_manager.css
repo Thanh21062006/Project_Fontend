@@ -1,7 +1,6 @@
 body{
     display: flex;
     justify-content: center;
-    background-color: #FAFAFB;
 }
 
 main {
@@ -56,7 +55,6 @@ main {
 
 .total {
     width: 345.88177490234375px;
-    background: transparent;
 }
 
 .search {
@@ -64,21 +62,25 @@ main {
 }
 
 .information {
-    width: 80%;
-    background-color: #FFFFFF;
-    padding: 20px;
+    width: 1191.4793701171875px;
 }
 
-.input input{
-    border: 1px solid #CCCCCC;
-    margin: 6px 0px 10px 0px;
-    border-radius: 5px;
-}
-
-.input button{
+tbody tr td button{
     border: none;
-    border-radius: 5px;
-    background-color: #28A745;
-    color: white;
+    padding: 2px 8px;
+    border-radius: 15.68px;
+    background-color: #F9F5FF;
+    color: #6941C6;
+}
+
+tbody tr .email {
+    color: #667085;
+}
+
+tbody tr td img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #C7B9DA;
 }
 

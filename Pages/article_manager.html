@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../Css/article_manager.css">
+</head>
+<body>
+    <div class="mainn">
+        <header class="with">
+            <nav class="navbar d-flex justify-content-end">
+                <div class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-solid fa-bell"></i>
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+              </nav>
+        </header>
+    
+        <main>
+            <div class="d-flex with">
+                <div class="d-flex flex-column menu">
+                    <a href="./user_manager.html" class="btn btn-primary"><i class="fa-solid fa-user-secret"></i>Manage Users</a>
+                    <a href="./entries_manager.html" class="btn btn-primary"><i class="fa-solid fa-book"></i>Manage Entries</a>
+                    <a href="#" class="btn btn-primary"><i class="fa-solid fa-book-open"></i>Manage Article</a>
+                    <a href="./login.html" class="btn btn-primary"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</a>
+                </div>
+
+                <div class="container">
+                    <div class="style">
+                        <div class="total style1 border-0"></div>
+                        <div class=" style1 search border-0"></div>
+                    </div>
+
+                    <div class="information">
+                        <h2 class="text-center">Quản lý bài viết</h2>
+                        <button type="button" class="btn add" data-bs-toggle="modal" data-bs-target="#myModal">Thêm bài viết mới</button>
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Ảnh</th>
+                                <th scope="col">Tiêu đề</th>
+                                <th scope="col">Chủ đề</th>
+                                <th scope="col">Nội dung</th>
+                                <th scope="col">Trạng thái</th>
+                                <th scope="col">Chỉnh sửa trạng thái</th>
+                                <th scope="col">Hành động</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><img src="https://th.bing.com/th/id/OIP.vKOKkKGui7IAWmlRLlm-HwHaHa?rs=1&pid=ImgDetMain" alt=""></td>
+                                <td>Học nấu ăn</td>
+                                <td>Nấu ăn</td>
+                                <td>Tôi học nấu ăn...</td>
+                                <td><div class="status">Public</div></td>
+                                <td>
+                                    <select class="form-select statuss" aria-label="Default select example">
+                                        <option value="public">Public</option>
+                                        <option value="Private">Private</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <div class="d-flex">
+                                        <button class="style edix">Sửa</button>
+                                        <button class="style del">Xóa</button>
+                                    </div>
+                                </td>
+                              </tr>
+                              
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">📝 Add New Article</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label"><b>Title:</b></label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label"><b>Article Categories:</b></label>
+                <input type="text" class="form-control" id="formGroupExampleInput2">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label"><b>Mood:</b></label>
+                <input type="text" class="form-control" id="formGroupExampleInput2">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label"><b>Content:</b></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="d-flex mb-3 radio">
+                <b class="pasd">Status</b>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">public</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">private</label>
+                </div>
+              </div>
+              <button type="button" class="btn btn-danger">Add</button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>

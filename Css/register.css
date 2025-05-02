@@ -1,10 +1,9 @@
 body {
     width: 100%;
-    padding-left: 20px;
-    padding-top: 10px;
+    height: 100vh;
 }
 
-h1{
+h1 {
     margin-bottom: 42px;
 }
 
@@ -13,17 +12,17 @@ h1{
 }
 
 .main {
-width: 1477px;
-height: 770px;
-background-color: aqua;
+    width: 1477px;
+    height: 770px;
+    background-color: aqua;
 }
 
 .register {
-    width: 1477px;
-    height: 770px;
     background-image: url("../Assets/images/backgrauRegister.PNG");
-    background-size: cover; 
-    margin-top: 10px;
+    background-size: cover;
+    background-position: center; 
+    padding-top: 95px;
+    padding-bottom: 121px;
 }
 
 .title {
@@ -33,24 +32,68 @@ background-color: aqua;
     justify-content: center;
     align-items: center;
     color: #E8EFFD;
-    /* justify-content: spa; */
 }
 
-.form {
+form {
     width: 492px;
-    height: 552px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     color: #fff;
-    padding-top: 49px;
-    padding-left: 65px;
-    padding-right: 33px;
+    padding: 49px 33px 49px 65px;
     border-radius: 4px;
 }
 
-.form input{
+.style {
     background: transparent;
+    border: none;
+    position: relative;
+}
+
+.style input {
     border: 1px solid rgba(255, 255, 255, .2);
+    background: transparent;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border-radius: 4px;
+}
+
+.style.success input {
+    border-color: rgba(255, 255, 255, .2);
+}
+
+.style.error input {
+    border-color: red;
+}
+
+.style .error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 5px;
+    height: 14px;
+    visibility: hidden;
+}
+
+.style.error .error {
+    visibility: visible;
+}
+
+label {
+    color: black;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+#message {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: green;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
 }

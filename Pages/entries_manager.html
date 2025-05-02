@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="../Css/entries_manager.css">
 </head>
 <body>
-    <div class="main">
+    <div class="mainn">
         <header class="with">
-            <nav class="navbar bg-body-tertiary d-flex justify-content-end">
+            <nav class="navbar d-flex justify-content-end">
                 <div class="icon">
                     <i class="fa-solid fa-envelope"></i>
                     <i class="fa-solid fa-bell"></i>
@@ -20,24 +20,78 @@
               </nav>
         </header>
     
-        <main class="width container">
-            <div class="menu">
-                <button type="button" class="btn btn-primary" disabled><i class="fa-solid fa-user-secret"></i>Manage Users</button>
-                <button type="button" class="btn btn-primary" disabled><i class="fa-solid fa-book"></i>Manage Entries</button>
-                <button type="button" class="btn btn-primary" disabled><i class="fa-solid fa-book-open"></i>Manage Article</button>
-                <button type="button" class="btn btn-primary" disabled><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</button>
-            </div>
-    
-            <div class="search">
-                <div class="total">
-                    <span>Team members <button>100 users</button></span>
+        <main>
+            <div class="d-flex with">
+                <div class="d-flex flex-column menu">
+                    <a href="./user_manager.html" class="btn btn-primary"><i class="fa-solid fa-user-secret"></i>Manage Users</a>
+                    <a href="#" class="btn btn-primary"><i class="fa-solid fa-book"></i>Manage Entries</a>
+                    <a href="./article_manager.html" class="btn btn-primary"><i class="fa-solid fa-book-open"></i>Manage Article</a>
+                    <a href="./login.html" class="btn btn-primary"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</a>
                 </div>
-    
-                <div>
-                    <label for=""><input type="text" placeholder="Search"><i class="fa-solid fa-magnifying-glass"></i></label>
+
+                <div class="container">
+                    <div class="style">
+                        <div class="total style1 border-0"></div>
+                        <div class=" style1 search border-0"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search user"></div>
+                    </div>
+
+                    <div class="information">
+                        <h3 class="text-center">📂 Manage Categories</h3>
+                        <div class="input d-flex flex-column">
+                            <label for="categoryName">Category Name:</label>
+                            <input type="text" id="categoryName" placeholder="Enter category name">
+                            <button class="addCategory" onclick="addCategory('1')">Add Category</button>
+                        </div>
+                        <p><h4>📋 Category List</h4></p>
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Category Name</th>
+                                <th scope="col">Actions</th>
+                              </tr>
+                            </thead>
+                            <tbody id="addEntries">
+                              <!-- <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>
+                                  <button type="button" class="btn btn-primary">add</button>
+                                  <button type="button" class="btn btn-secondary">edit</button>
+                                  <button type="button" class="btn btn-danger">delete</button>
+                                </td>
+                              </tr> -->
+                            </tbody>
+                          </table>
+                    </div>
                 </div>
             </div>
         </main>
     </div>
+
+    <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <input type="text" class="name">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="../Js/entries_manager.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>
