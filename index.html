@@ -30,12 +30,15 @@
     <main>
       <div class="content">
         <h3>Recent blog posts</h3>
-        <div class="d-flex">
-          <div class="col-md-6 with">
+        <div class="d-flex page1">
+          <!-- <div class="col-md-6 with">
             <img src="../Assets/images/a6f14c1fa6846f29f11dc2e85f40b29fbcc92d57.png" alt="">
             <p>Date: 2025-02-25</p>
-            <h3>A Productive Day at Work</h3>
-            <p>Today was a really productive day at work. I managed to finish a report ahead of schedule and received positive feedback from my manager.</p>
+            <div class="d-flex justify-content-between">
+              <h3>A Productive Day at Work</h3>
+              <button data-bs-toggle="modal" data-bs-target="#descriptionModal" class="bg-transparent border-0"><i class="fa-solid fa-share-from-square"></i></button>
+            </div>
+            <p>fxnjhfToday was a really productive day at work. I managed to finish a report ahead of schedule and received positive feedback from my manager.</p>
             <button>Daily Journal</button>
           </div>
   
@@ -46,7 +49,10 @@
               </div>
               <div>
                 <p>Date: 2025-02-25</p>
-                <h3>A Productive Day at Work</h3>
+                <div class="d-flex justify-content-between">
+                  <h3>A Productive Day at Work</h3>
+                  <button data-bs-toggle="modal" data-bs-target="#descriptionModal" class="bg-transparent border-0"><i class="fa-solid fa-share-from-square"></i></button>
+                </div>
                 <p>Today was a really productive day at work. I managed to finish a report ahead of schedule and received positive feedback from my manager.</p>
                 <button>Daily Journal</button>
               </div>
@@ -58,20 +64,22 @@
               </div>
               <div>
                 <p>Date: 2025-02-25</p>
-                <h3>A Productive Day at Work</h3>
+                <div class="d-flex justify-content-between">
+                  <h3>A Productive Day at Work</h3>
+                  <button data-bs-toggle="modal" data-bs-target="#descriptionModal" class="bg-transparent border-0"><i class="fa-solid fa-share-from-square"></i></button>
+                </div>
                 <p>Today was a really productive day at work. I managed to finish a report ahead of schedule and received positive feedback from my manager.</p>
                 <button>Daily Journal</button>
               </div>
             </div>
-  
-          </div>
+          </div> -->
         </div>
         
-        <div class="add"><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal" data-bs-whatever="@getbootstrap"><h1><a href="./Pages/login.html">ADD NEW ARTICLE</a><i class="fa-solid fa-circle-plus"></i></h1></button></div>
+        <div class="add"><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal" data-bs-whatever="@getbootstrap"><h1>ADD NEW ARTICLE<i class="fa-solid fa-circle-plus"></i></h1></button></div>
 
         <p><b>All blog posts</b> Daily Journal Work & Career Personal Thoughts Emotions & Feelings  </p>
         <div class="infomation d-flex">
-          <div class="col-md-4">
+          <!-- <div class="col-md-4">
             <img src="../Assets/images/a6f14c1fa6846f29f11dc2e85f40b29fbcc92d57.png" alt="">
             <p>Date: 2025-02-25</p>
             <div class="d-flex">
@@ -80,25 +88,21 @@
             </div>
             <p>Today was a really productive day at work. I managed to finish a report ahead of schedule and received positive feedback from my manager.</p>
             <button>Daily Journal</button>
-          </div>
-
-          <div class="col-md-4">
-            <img src="../Assets/images/a6f14c1fa6846f29f11dc2e85f40b29fbcc92d57.png" alt="">
-            <p>Date: 2025-02-25</p>
-            <h3>A Productive Day at Work</h3>
-            <p>Today was a really productive day at work. I managed to finish a report ahead of schedule and received positive feedback from my manager.</p>
-            <button>Daily Journal</button>
-          </div>
-
-          <div class="col-md-4">
-            <img src="../Assets/images/a6f14c1fa6846f29f11dc2e85f40b29fbcc92d57.png" alt="">
-            <p>Date: 2025-02-25</p>
-            <h3>A Productive Day at Work</h3>
-            <p>Today was a really productive day at work. I managed to finish a report ahead of schedule and received positive feedback from my manager.</p>
-            <button>Daily Journal</button>
-          </div>
-
+          </div> -->
         </div>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </main>
 
@@ -211,5 +215,6 @@
         </div>
       </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-</body>
+      <script src="./Js/index.js"></script>
+    </body>
 </html>

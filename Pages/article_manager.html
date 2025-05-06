@@ -32,7 +32,7 @@
                 <div class="container">
                     <div class="style">
                         <div class="total style1 border-0"></div>
-                        <div class=" style1 search border-0"></div>
+                        <!-- <div class=" style1 search border-0"></div> -->
                     </div>
 
                     <div class="information">
@@ -50,8 +50,8 @@
                                 <th scope="col">Hành động</th>
                               </tr>
                             </thead>
-                            <tbody>
-                              <tr>
+                            <tbody class="articleList">
+                              <!-- <tr>
                                 <td><img src="https://th.bing.com/th/id/OIP.vKOKkKGui7IAWmlRLlm-HwHaHa?rs=1&pid=ImgDetMain" alt=""></td>
                                 <td>Học nấu ăn</td>
                                 <td>Nấu ăn</td>
@@ -70,9 +70,10 @@
                                     </div>
                                 </td>
                               </tr>
-                              
+                               -->
                             </tbody>
                           </table>
+                          <div class="pation text-center"></div>
                     </div>
                 </div>
             </div>
@@ -93,7 +94,12 @@
               </div>
               <div class="mb-3">
                 <label for="formGroupExampleInput2" class="form-label"><b>Article Categories:</b></label>
-                <input type="text" class="form-control" id="formGroupExampleInput2">
+                <select class="form-select article" aria-label="Default select example">
+                  <!-- <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option> -->
+                </select>
               </div>
               <div class="mb-3">
                 <label for="formGroupExampleInput2" class="form-label"><b>Mood:</b></label>
@@ -114,7 +120,10 @@
                   <label class="form-check-label" for="inlineRadio2">private</label>
                 </div>
               </div>
-              <button type="button" class="btn btn-danger">Add</button>
+              <div class="inputImg">
+                <input type="file" id="imgInput">
+              </div>
+              <button type="button" class="btn btn-danger" id="btnAddArticle">Add</button>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -123,6 +132,9 @@
         </div>
       </div>
 
+      <script src="../Js/article_manager.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>
+
+<!-- <img src="../Assets/images/Hoctap.png" alt=""> -->

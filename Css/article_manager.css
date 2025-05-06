@@ -65,7 +65,7 @@ main {
 }
 
 .information {
-    width: 80%;
+    width: 85%;
     padding: 20px;
 }
 
@@ -105,7 +105,7 @@ tbody .statuss{
 }
 
 .style {
-    width: 49.61000061035156px;
+    width: 50px;
     height: 28px;
     border-radius: 4px;
     text-align: center;
@@ -121,4 +121,11 @@ tbody .statuss{
     background-color: #EF4444;
 }
 
+.inputImg {
+    height: auto;
+    width: auto;
+}
 
+#btnAddArticle {
+    margin-top: 20px;
+}
